@@ -1,0 +1,244 @@
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.65); /* Black w/ opacity */
+}
+#mod{
+  width: 60%;
+}
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: fit-content;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #1c1b1b;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding-top: 20px;
+  color: black;
+  border-top: 1px solid #7e7a7a;
+}
+
+.modal-body {padding: 2px 16px;}
+
+
+.content-wrapper {
+    margin-top: 78px;
+}
+.w-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+}
+.page-title {
+    margin-top: 0px;
+    margin-bottom: 86px;
+    font-size: 36px;
+    line-height: 51px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+.footer {
+    padding-top: 43px;
+    padding-bottom: 43px;
+    background-color: transparent;
+    color: #222;
+    text-align: center;
+}
+.venue-list-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 1px solid hsla(0, 0%, 100%, .3);
+    border-bottom: 1px solid hsla(0, 0%, 100%, .3);
+}
+@media screen and (max-width: 991px){
+
+  #mod{
+  width: 80% !important;
+  }
+  #fot{
+    text-align: center !important;
+  }
+  .w-container {
+    max-width: 728px !important;
+  } 
+  .w-nav[data-collapse="medium"] .w-nav-menu {
+      display: none;
+  }
+  .nav-menu {
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+    border-top: 1px solid #000 !important;
+    background-color: rgba(0, 0, 0, .85) !important;
+  }
+  
+  .w-container {
+    max-width: 728px !important;
+  }
+  .logo{
+  padding-top: 8px !important;
+  width: 10% !important;
+  }
+}
+
+@media (max-width: 767px){
+  
+  #mod{
+  width: 80% !important;
+  }
+  #fot{
+    text-align: center !important;
+  }
+  .logo{
+  padding-top: 8px !important;
+  width: 10% !important;
+  }
+}
+
+@media screen and (max-width: 479px){
+  .w-container {
+      max-width: none !important;
+  } 
+  .logo{
+  padding-top: 8px !important;
+  width: 10% !important;
+  }
+  #mod{
+  width: 80% !important;
+  }
+  #fot{
+    text-align: center !important;
+  }
+}
+
+#a{
+    color: #2675ae;
+    text-decoration: none;
+}
+.new{
+  margin-top: 16px;
+    padding: 15px 20px;
+    text-align: center;
+}
+.head{
+  
+  text-align: center;
+}
+.login{
+
+  margin: 0 auto;
+    width: 340px;
+}
+label{
+  color: #0e0e0f;
+}
+.bd1{
+
+  background-color: transparent;
+    font-size: 14px;
+    padding: 20px;
+}
+.btn-primary {
+    background-color: #2675aed9;
+}
+form label {
+    display: block;
+    margin-bottom: 7px;
+}
+input{
+  margin-bottom: 15px;
+    margin-top: 5px;
+}
+.label-link{
+  margin-left: 7em;
+}
+.form-control{
+  background-color: #ffffffc2;
+}
+#p{
+  color: black;
+
+}
+.container{
+    color: black;
+    padding-left: 16px;
+}
+.col-sm-4{
+  text-align: center;
+}
+.row{
+      margin-left: 40px;
+    margin-top: 20px;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: left;
+    border-top: 1px solid #7e7a7a;
+    color: black;
+    background-color: white;
+}
+.btn{
+  width: 97px;
+    border: 1px solid #0078ff;
+    height: 32px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0078ff;
+    background-color: #fff;
+}
+.btn3{
+  width: 97px;
+    border: 1px solid #fff;
+    height: 32px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #0078ff;
+}
